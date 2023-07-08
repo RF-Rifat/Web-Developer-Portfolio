@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-clr: #fff8f3;
+  --btn-bg-color: #fd6e0a;
+  --btn-color: #fff;
+  --header-text-clr: #181818;
+  --paragraph-txt-clr: #757575;
+  --nav-txt-clr: #474747;
+}
+
+/* fonts */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* navbar styles */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5cqw 8cqw 0cqw 3cqw;
+}
+.nav-title {
+  color: var(--header-text-clr);
+  font-size: 2.8125rem;
+  font-weight: 800;
+}
+.nav-title > span {
+  color: var(--btn-bg-color);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav li {
+  margin-right: 50px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--nav-txt-clr);
+}
+nav button {
+  border-radius: 0.3125rem;
+  background: var(--btn-bg-color);
+  border-radius: 0.3125rem;
+  color: var(--btn-color);
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: none;
+  padding: 15px 30px;
+}
+.left-section {
+  display: flex;
+  align-items: center;
+}
+.left-section > img {
+  height: 90%;
+}
+.right-section {
+  flex-grow: 1;
+}
+/* header styles */
+header {
+  background: var(--bg-clr);
+  height: 100svh;
+  display: flex;
+}
+
+.header-body {
+  display: flex;
+  padding: 3cqw 1.5cqw 0cqw 0.5cqw;
+  justify-content: space-around;
+  background-image: url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.header-body > img {
+  width: 32rem;
+  height: 38rem;
+  flex-shrink: 0;
+}
+.header-body h3 {
+  color: var(--nav-txt-clr);
+  font-size: 2.8125rem;
+  font-weight: 600;
+}
+.header-body h1 {
+  color: var(--header-text-clr);
+  font-size: 5.3125rem;
+  font-weight: 700;
+}
+.header-body p {
+  display: flex;
+  width: 36.5625rem;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: var(--paragraph-txt-clr);
+  font-family: Open Sans;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+.my-intro {
+  padding: 8cqw 0;
+}
+.my-intro > * {
+  padding: 0.5cqw 0;
+}
+
+.download-btn {
+  background: var(--btn-bg-color);
+  color: var(--btn-color);
+  border: 0;
+  padding: 1cqw 1cqw;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 0.3125rem;
+  margin-right: 2cqw;
+}
+.contact-btn {
+  border: 1px solid var(--btn-bg-color);
+  background: var(--btn-color);
+  color: var(--btn-bg-color);
+  padding: 1cqw 1cqw;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 0.3125rem;
+}
+
+/* Main section */
+
+/* about section */
+.about-section {
+  background: var(--bg-clr);
+  margin: 9rem 14rem;
+  padding: 4cqw 7cqw;
+}
+.about-container h3 p div {
+  padding-bottom: 3cqw;
+}
+.about-section > h3 {
+  text-align: center;
+  padding: 0.5cqw;
+}
+.about-section > p {
+  text-align: center;
+  padding: 0.5cqw;
+}
+.about-section > h3 {
+  color: var(--header-text-clr);
+  font-family: Open Sans;
+  font-size: 2.1875rem;
+  font-weight: 700;
+}
+.about-section > p {
+  color: var(--paragraph-txt-clr);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.about-container div > h4 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--header-text-clr);
+}
+.about-container div > p {
+  text-align: center;
+  color: var(--paragraph-txt-clr);
+}
+
+/* skill section */
+.skill-section > h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--header-text-clr);
+}
+.skill-section > p {
+  text-align: center;
+  font-size: 1.125rem;
+  color: var(--paragraph-txt-clr);
+  padding: 3cqw 20cqw;
+}
+
+.skill-box {
+  display: flex;
+  padding: 1cqw 2cqw;
+  
+  margin: 0cqw 10cqw;
+  gap: 1.5rem;
+}
+
+.skill-box>div{
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 0.3125rem;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+.skill-box div>*{
+    padding: 1rem 1.5rem;
+}
+
+/* resume section */
+
+.resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.resume>h3{
+  text-align: center;
+  margin: 5cqw 0;
+  font-size: 2.2rem;
+  color: var(--header-text-clr);
+}
+.resume-info{
+    display: flex;
+    width: 50cqw;
+    gap: 3cqw;
+}
+/* .qualification,.experience>h4{
+  font-size: 1.8rem;
+  color: var(--header-text-clr);
+} */
+.qualification-header{
+  font-size: 1.8rem;
+  color: var(--header-text-clr);
+}
+.experience-header{
+  font-size: 1.8rem;
+  color: var(--header-text-clr);
+}
+.qualification-header-2{
+  font-size: 1.125rem;
+  color: var(--header-text-clr);
+}
+.experience-header-2{
+  font-size: 1.125rem;
+  color: var(--header-text-clr);
+}
+.para-text{
+  color: var(--paragraph-txt-clr);
+  font-size: 1rem;
+}
